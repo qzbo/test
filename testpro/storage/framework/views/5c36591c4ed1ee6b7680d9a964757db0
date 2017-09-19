@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><?php echo $__env->yieldContent('title'); ?></title>
+	<style type="text/css">
+		table,td{font-family:微软雅黑;text-align:center;}
+		h3{font-family:微软雅黑;}
+	</style>
+</head>
+<body>
+	<center>
+		<?php echo $__env->make('news.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+
+		<?php $__env->startSection('content'); ?>
+		
+
+		<?php echo $__env->yieldSection(); ?>
+
+
+		
+	</center>	
+</body>
+</html>
